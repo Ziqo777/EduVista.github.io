@@ -1,16 +1,3 @@
-<button type="button" class="btn btn-dark">Dark</button> 
-
-
-
-
-linkin dalinan target="_blank"
-
-{
-    "liveServer.settings.port": 5501
-}
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +10,11 @@ linkin dalinan target="_blank"
     <link rel="icon" type="image/png" sizes="16x16" href="ресурсы/files/icon/favicon-16x16.png">
     <link rel="manifest" href="ресурсы/files/icon/site.webmanifest">
     <title>EduVista</title>
+    <style>
+      #signOutButton {
+          font-size: 30px; /* size button ⍇ */
+      }
+  </style>
 </head>
 <body>
     <header>
@@ -32,20 +24,22 @@ linkin dalinan target="_blank"
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">მთავარი</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="lessons.html">ელემენტები</a>
-                  </li>
-                </ul>
-              </div>
+              
             </div>
+            <span id="userName"> </span><span id="signOutButton" style="color: white;">⍇</span>
           </nav>
     </header>
-
+    <style>
+      .back-button {
+        position: absolute;
+        left: 10px;
+        top: 300px;
+        padding: 10px 10px;
+        background-color: #f1f1f1;
+        color: black;
+        border: 1px solid #ccc;
+      }
+    </style>
     <section>
         <div class="container-fluid mt-4">
           <div class="row">
@@ -59,7 +53,7 @@ linkin dalinan target="_blank"
                    <div class="card-body">
                      <h5 class="card-title"><a href="music.html"><h4>მუსიკა</h4></a></h5>
                      <p class="card-text"><a href="music.html">მუსიკალური ინსტრუმენტები</a></p>
-                     <a href="music.html" class="btn btn-outline-primary">დაიწყე</a>
+                     <a href="music.html" class="btn btn-dark">დაიწყე</a>
                    </div>
                   </div>
                 </div>
@@ -69,7 +63,7 @@ linkin dalinan target="_blank"
                    <div class="card-body">
                      <h5 class="card-title"><a href="kulinar.html"><h4>კულინარია</h4></a></h5>
                      <p class="card-text"><a href="kulinar.html">კერძების რეცეპტები</a></p>
-                     <a href="kulinar.html" class="btn btn-outline-primary">დაიწყე</a>
+                     <a href="kulinar.html" class="btn btn-dark">დაიწყე</a>
                    </div>
                   </div>
                 </div>
@@ -79,7 +73,7 @@ linkin dalinan target="_blank"
                    <div class="card-body">
                      <h5 class="card-title"><a href="kartuli.html"><h4>ქართული ენა</h4></a></h5>
                      <p class="card-text"><a href="kartuli.html">ენის ძირითადი ელემენტები</a></p>
-                     <a href="kartuli.html" class="btn btn-outline-primary">დაიწყე</a>
+                     <a href="kartuli.html" class="btn btn-dark">დაიწყე</a>
                    </div>
                   </div>
                 </div>
@@ -90,7 +84,7 @@ linkin dalinan target="_blank"
                     <div class="card-body">
                       <h5 class="card-title"><a href="inglisuri.html"><h4>ინგლისური ენა</h4></a></h5>
                       <p class="card-text"><a href="inglisuri.html">ენის ძირითადი ელემენტები</a></p>
-                      <a href="inglisuri.html" class="btn btn-outline-primary">დაიწყე</a>
+                      <a href="inglisuri.html" class="btn btn-dark">დაიწყე</a>
                     </div>
                    </div>
                  </div> 
@@ -101,7 +95,7 @@ linkin dalinan target="_blank"
                    <div class="card-body">
                      <h5 class="card-title"><a href="matt.html"><h4>მატემატიკა</h4></a></h5>
                      <p class="card-text"><a href="matt.html">მატემატიკის ძირითადი ელემეტები</a></p>
-                     <a href="matt.html" class="btn btn-outline-primary">დაიწყე</a>
+                     <a href="matt.html" class="btn btn-dark">დაიწყე</a>
                    </div>
                   </div>
                 </div>
@@ -111,17 +105,17 @@ linkin dalinan target="_blank"
                    <div class="card-body">
                      <h5 class="card-title"><a href="arkitek.html"><h4>არქიტექტურა</h4></a></h5>
                      <p class="card-text"><a href="arkitek.html">ხაზვისა და დიზაინის ძირითადი ელემენტები</a></p>
-                     <a href="arkitek.html" class="btn btn-outline-primary">დაიწყე</a>
+                     <a href="arkitek.html" class="btn btn-dark">დაიწყე</a>
                    </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-4">
                  <div class="card">
-                   <a href=""><img src="ресурсы/images/fizd.jpg" class="card-img-top" alt="..."></a>
+                   <a href=""><img src="ресурсы/images/zi.jpg" class="card-img-top" alt="..."></a>
                    <div class="card-body">
                      <h5 class="card-title"><a href="fizika.html"><h4>ფიზიკა</h4></a></h5>
                      <p class="card-text"><a href="fizika.html">ძირითადი ფორმულები</a></p>
-                     <a href="fizika.html" class="btn btn-outline-primary">დაიწყე</a>
+                     <a href="fizika.html" class="btn btn-dark">დაიწყე</a>
                    </div>
                   </div>
                 </div> 
@@ -129,9 +123,9 @@ linkin dalinan target="_blank"
                   <div class="card">
                     <a href=""><img src="ресурсы/images/ხხ.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <h5 class="card-title"><a href=""><h4>ქიმია</h4></a></h5>
-                      <p class="card-text"><a href="">უფჰიჯდკს</a></p>
-                      <a href="#" class="btn btn-outline-primary">დაიწყე</a>
+                      <h5 class="card-title"><a href="ximia.html"><h4>ქიმია</h4></a></h5>
+                      <p class="card-text"><a href="ximia.html">უფჰიჯდკს</a></p>
+                      <a href="ximia.html" class="btn btn-dark">დაიწყე</a>
                     </div>
                    </div>
                  </div>
@@ -142,7 +136,7 @@ linkin dalinan target="_blank"
                    <div class="card-body">
                      <h5 class="card-title"><a href="prog.html"><h4>პროგრამირება</h4></a></h5>
                      <p class="card-text"><a href="prog.html">პროგრამირების ენები</a></p>
-                     <a href="prog.html" class="btn btn-outline-primary">დაიწყე</a>
+                     <a href="prog.html" class="btn btn-dark">დაიწყე</a>
                    </div>
                   </div>
                 </div>
@@ -167,7 +161,7 @@ linkin dalinan target="_blank"
    
         </div>
         <div class="col-lg-4 col-md-12 footer-text text-center">  
-          <p>კონტაქტები<br>+995555119715<br>+995591079666</p>
+          <p>კონტაქტები:<br>+995555119715<br>+995591079666</p>
         </div>
         <div class="col-lg-4 col-md-12 footer-text text-center">  
           <p>gmail მისამართები:<br>@giulli.akhundova.1@iliauni.edu.ge<br>@ziadin.mirzoev.1@iliauni.edu.ge</p>
@@ -184,55 +178,17 @@ linkin dalinan target="_blank"
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-</html>
-
-
-
-
-<button type="button" class="btn btn-outline-dark btn-lg my-4"><a href="lessons.html"><h3>დაიწყე სწავლა</h3></a></button>
-
-
-
-              <div class="col-lg-12 col-md-12 text-center mt-4">
-                <a href="lessons.html" class="btn btn-dark btn-lg  my-4">დაიწყე სწავლა</a>
-                
-              </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              უკან დაბრუნების კოდი
-
-              <script>
-    var userName = localStorage.getItem("userName");
-    document.getElementById("userName").innerText = userName;
-    document.getElementById("signOutButton").addEventListener("click", function() {
-    // Remove username from localStorage
+    <script>
+      var userName = localStorage.getItem("userName");
+      document.getElementById("userName").innerText = userName;
+      document.getElementById("signOutButton").addEventListener("click", function() {
     localStorage.removeItem("userName");
-    // Redirect to the index page
     window.location.href = "index.html";
 });
 
 if (!userName) {
-    // If username exists, hide the input and button
     document.getElementById("signOutButton").style.display = "none";
 }
-  </script>
-  <button class="back-button" onclick="history.back();">
-    <span style="font-size: 24px;">⬅</span> უკან
-  </button>
-  </body>
+    </script>
+</body>
+</html>
